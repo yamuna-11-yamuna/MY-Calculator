@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #06110a, #0e1a11, #040706);
+}
+
+/* Calculator container */
+.calculator {
+  background: #0c140d;
+  border: 1px solid #1a2c1e;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Display box */
+input {
+  width: 320px;
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #101b12;
+  color: #d7ffd7;
+  font-size: 38px;
+  text-align: right;
+  outline: none;
+  box-shadow: inset 0 0 8px rgba(30, 60, 35, 0.4);
+}
+
+input::placeholder {
+  color: #7dbb7b;
+}
+
+/* Buttons */
+button {
+  border: none;
+  width: 65px;
+  height: 65px;
+  margin: 10px;
+  border-radius: 50%;
+  background: #0e1a12;
+  color: #e6e6e6;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 3px 3px 10px #050a07, -2px -2px 8px #132016;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1a2b1f;
+  color: #b8f5b2;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(14, 40, 18, 0.6);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Operator buttons */
+.operator {
+  color: #5eea67;
+  font-weight: 600;
+}
+
+/* Equal button */
+.equalBtn {
+  background: linear-gradient(145deg, #1e7b2e, #115c1f);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(30, 125, 50, 0.6);
+}
+
+.equalBtn:hover {
+  background: linear-gradient(145deg, #e69225, #f5ad33);
+  box-shadow: 0 6px 18px rgba(36, 145, 60, 0.8);
+}
+
+/* Clear button */
+button.clear {
+  color: #ff7070;
+  font-weight: 600;
+}
+
+button.clear:hover {
+  background: #261010;
+  color: #ffb3b3;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  input {
+    width: 90%;
+    font-size: 28px;
+  }
+
+  button {
+    width: 55px;
+    height: 55px;
+    font-size: 18px;
+    margin: 8px;
+  }
+}
